@@ -1,0 +1,95 @@
+* {
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    background-color: var(--bodyColor,#3a4764);
+    /* background-color: #3a4764; */
+}
+
+#main {
+    margin: 2.5vw auto;
+    width: 34vw;
+    height: 40vw;
+    border: 1px solid var(--mainBoderColor,black);
+    /* border: 1px solid black; */
+    background-color: var(--mainColor,#3a4764);
+    /* background-color: #3a4764; */
+    border-radius: 3%;
+}
+
+#input_text {
+    /* border: 1px solid red; */
+    margin: 3% 3%;
+    width: 94%;
+    height: 18%;
+    display: flex;
+}
+
+#input_button {
+    /* border: 1px solid black; */
+    margin: 3% 1%;
+    padding: 4% 3% 0;
+    height: 72%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--inputButtonColor,#252d44);
+    /* background-color: #252d44; */
+    border-radius: 2%;
+}
+
+#input_text #content {
+    flex: auto;
+    margin: 0;
+    width: 100%;
+    /*height: 65%;*/
+    font-size: 3vw;
+    background-color: var(--inputTextColor,#172032);
+    color: var(--inputTextFontColor,#fff);
+    border-radius: 0.5vw;
+    border: 1px solid var(--inputTextColor,#172032);
+    border-right-color: var(--inputContentBorderColor,#aa9f96);
+    border-bottom-color: var(--inputContentBorderColor,#aa9f96);
+    /* color: #491262; */
+    /* color: #fff;
+    background-color: #172032; */
+    text-align: right;
+}
+
+#input_button .same_size {
+    flex: auto;
+    margin: 1%;
+    width: 18%;
+    height: 17%;
+    font-size: 1.5vw;
+    background-color: var(--inputButtonSameColor,#e9e4db);
+    /* background-color: #e9e4db; */
+    color: var(--inputButtonSameFontColor,#000);
+    border: 1px solid var(--inputButtonSameColor,#e9e4db);
+    border-right-color: var(--inputButtonBorderColor);
+    border-bottom-color: var(--inputButtonBorderColor);
+    border-radius: 10%;
+}
+
+#input_button .same_size:nth-child(4),
+#input_button .same_size:nth-child(5),
+#input_button .same_size:nth-child(16) {
+    color: var(--inputButtonChildFontColor,#fff);
+    background-color: var(--inputButtonChildColor,#637397);
+    /* color: #fff;
+    background-color: #637397; */
+}
+
+#input_button .equal_size {
+    flex: auto;
+    margin: 1%;
+    width: 38%;
+    height: 17%;
+    font-size: 1.5vw;
+    color: var(--inputButtonEqualFontColor,#fff);
+    background-color: var(--inputButtonEqualColor,#d04130);
+    border: 1px solid var(--inputButtonEqualColor,#d04130);
+    /* background-color: #d04130;
+    color: #fff; */
+    border-radius: 10%;
+}
